@@ -153,7 +153,6 @@ public class ClientMyPageController {
 		ClientMyPageVO myPagevo1 = new ClientMyPageVO();
 
 		myPagevo1.setClientPassword(request.getParameter("pw"));
-		System.out.println(myPagevo1.getClientPassword());
 		int result = clientMyPageService.checkPw(myPagevo1);
 		System.out.println(result);
 

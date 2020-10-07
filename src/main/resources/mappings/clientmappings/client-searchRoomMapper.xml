@@ -10,11 +10,11 @@
 		r.room_standard_people, r.room_max_people,
 		r.room_price_people, r.room_services,
 		r.room_info, r.room_usage,I.image_link,I.Image_type,
-        (select count(r.room_id)
-        from reservation
+        (select count(reservation.room_id)
+        from reservation reservation
         <![CDATA[ where 
         to_char(reservation_in_date,'yyyy-mm-dd') >= #{reservationInDate} and 
-        to_char(reservation_out_date,'yyyy-mm-dd') <= #{reservationOutDate} and r.room_id = r.room_id
+        to_char(reservation_out_date,'yyyy-mm-dd') <= #{reservationOutDate} and reservation.room_id = r.room_id
         ]]>)
         as roomCount
 		from room r  JOIN ROOM_IMAGE I ON(R.ROOM_ID = I.ROOM_ID)

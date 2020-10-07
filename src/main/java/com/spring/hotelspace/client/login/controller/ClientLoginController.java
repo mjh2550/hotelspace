@@ -24,7 +24,7 @@ public class ClientLoginController {
 	@Autowired
 	private KakaoAPI kakao;
 
-	private final String codeURI = "https://kauth.kakao.com/oauth/authorize?client_id=7fe2ea8fb8719474f5388f06fbf3f3ca&redirect_uri=http://localhost:8088/web/kakaoLogin.do&response_type=code";
+	private final String codeURI = "https://kauth.kakao.com/oauth/authorize?client_id=7fe2ea8fb8719474f5388f06fbf3f3ca&redirect_uri=http://ec2-18-216-125-181.us-east-2.compute.amazonaws.com/hotelspace/kakaoLogin.do&response_type=code";
 
 	@RequestMapping(value = "/clientLogin.do", method = RequestMethod.GET)
 	public String getloginPaget(ClientLoginVO client, HttpSession httpSession, Model model) {
