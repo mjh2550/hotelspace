@@ -25,7 +25,6 @@ public class ClientRegisterController {
 	//회원가입 폼
 	@RequestMapping(value = "/Register.do", method = { RequestMethod.GET, RequestMethod.POST})
 	public String RegisterForm(Model model) {
-		System.out.println("asdasdfasd");
 		return "register/Register";
 	}
 	

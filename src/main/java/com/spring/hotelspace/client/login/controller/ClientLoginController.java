@@ -37,7 +37,7 @@ public class ClientLoginController {
 
 		ClientLoginVO resultClient = clientLoginService.getClientLoginResult(client);
 
-		Object destination = httpSession.getAttribute("destination");
+		//Object destination = httpSession.getAttribute("destination");
 
 		if (resultClient != null) {
 			if (resultClient.getClientPassword().equals(client.getClientPassword())) {
@@ -57,13 +57,13 @@ public class ClientLoginController {
 			return "login/clientLogin";
 		}
 
-		return "redirect:" + (destination != null ? (String) destination : "index.do");
+		return "redirect:index.do";
 	}
 
 	@RequestMapping(value = "/kakaoLogin.do", method = RequestMethod.GET)
 	public String loginToClientbyKakao(@RequestParam("code") String code, HttpSession httpSession, Model model) {
 
-		Object destination = httpSession.getAttribute("destination");
+		//Object destination = httpSession.getAttribute("destination");
 
 		System.out.println("code : " + code);
 
@@ -90,7 +90,7 @@ public class ClientLoginController {
 			return "register/kakaoRegister";
 		}
 
-		return "redirect:" + (destination != null ? (String) destination : "index.do");
+		return "redirect:index.do";
 	}
 
 	// 로그아웃 & 카카오 회원가입 중 취소를 원하는 회원
