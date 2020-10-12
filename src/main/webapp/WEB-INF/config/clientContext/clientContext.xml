@@ -37,8 +37,8 @@
 			<mvc:exclude-mapping path="/searchHotelList.do"/>
 			<mvc:exclude-mapping path="/clientQNAServices.do"/>
 			<mvc:exclude-mapping path="/Register.do"/>
-			<mvc:exclude-mapping path="RegisterInsert.do"/>
-			<mvc:exclude-mapping path="checkId.do"/>
+			<mvc:exclude-mapping path="/RegisterInsert.do"/>
+			<mvc:exclude-mapping path="/checkId.do"/>
 			<mvc:exclude-mapping path="/AllQNA.do"/>
 			<mvc:exclude-mapping path="/movePage.do"/>
 			<mvc:exclude-mapping path="/clientLogin.do"/>
