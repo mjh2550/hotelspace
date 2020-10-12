@@ -62,7 +62,7 @@
 		src="resources/client/login/images/kakao_login_medium_narrow.png"></a>
 	
 	<div class="flex-col-c p-t-224">
-		<span class="txt2 p-b-10"> 회원가입이 필요하신가요? </span> <a href="Register.do?kakaoURI=${kakaoURI }"
+		<span class="txt2 p-b-10"> 회원가입이 필요하신가요? </span> <a href="Register.do"
 			class="txt3 bo1 hov1"> 회원가입 </a>
 	</div>
 	
